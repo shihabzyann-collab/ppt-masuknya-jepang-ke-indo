@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Masuknya Jepang ke Indonesia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--paper:#F6EFE2;--paper2:#EBDFC9;--ink:#1F2A37;--soft:#46515F;--red:#B02A30;--teal:#2F5D62;--gold:#E0A526;--dark:#17212C;--dark2:#223041;--card:#FFF9EE;--mute:#C3CEDA}
+body{font-family:'Nunito Sans',Arial,sans-serif;color:#1F2A37}
+section{counter-increment:page;background:linear-gradient(160deg,#FCF7EC,#E6D8BD);padding:128px 128px 160px;color:var(--ink);font-family:'Nunito Sans',Arial,sans-serif}
+section.alt{background:linear-gradient(160deg,#F1E6CF,#DCCBA6)}
+section.dark{background:linear-gradient(160deg,#2A3D52,#111922);color:var(--paper)}
+h1{font-family:'Domine',Georgia,serif;font-size:104px;font-weight:700;line-height:1.1;color:var(--paper);text-shadow:0 5px 0 #B02A30,0 14px 28px rgba(0,0,0,.55)}
+h2{font-family:'Domine',Georgia,serif;font-size:68px;font-weight:700;line-height:1.1;color:var(--ink);margin-bottom:48px;text-shadow:0 3px 0 #D5C198,0 8px 14px rgba(31,42,55,.18)}
+section.dark h2{color:var(--paper);text-shadow:0 4px 0 #8C1C22,0 12px 22px rgba(0,0,0,.5)}
+.eyebrow{font-size:28px;font-weight:700;color:var(--red);letter-spacing:3px;margin-bottom:12px}
+section.dark .eyebrow{color:var(--gold)}
+.row{display:flex;flex-direction:row;gap:84px;align-items:center}
+.g64{gap:64px}
+.g104{gap:104px}
+.col{display:flex;flex-direction:column;gap:24px}
+.gap28{gap:28px}
+.w880{width:880px}
+.w960{width:960px}
+.w1000{width:1000px}
+.w1100{width:1100px}
+.card{background:linear-gradient(180deg,#FFFFFF,#F2E6CC);border-left:12px solid var(--red);border-radius:20px;padding:24px 32px;display:flex;flex-direction:column;gap:6px;box-shadow:0 6px 0 #C9B58C,0 14px 0 -2px rgba(150,120,70,.35),0 22px 36px rgba(31,42,55,.3)}
+.card h3{font-size:36px;font-weight:700;line-height:1.2;color:var(--ink)}
+.card p{font-size:30px;line-height:1.35;color:var(--soft)}
+.dcard{background:linear-gradient(180deg,#34495F,#1B2735);border-top:10px solid var(--gold);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:12px;box-shadow:0 6px 0 #0B1119,0 14px 0 -2px rgba(0,0,0,.35),0 24px 40px rgba(0,0,0,.5)}
+.dcard h3{font-size:36px;font-weight:700;line-height:1.2;color:var(--gold)}
+.dcard p{font-size:30px;line-height:1.35;color:var(--paper)}
+.three{display:flex;flex-direction:row;gap:40px}
+.three .dcard{width:528px}
+.lead{font-size:34px;line-height:1.35;color:var(--soft)}
+.dlead{font-size:34px;line-height:1.35;color:var(--mute)}
+.sub{font-size:32px;line-height:1.35;color:var(--mute)}
+.fragment{opacity:0;transform:translateY(24px) scale(.97);transition:opacity .5s,transform .5s}
+.fragment.visible{opacity:1;transform:translateY(0) scale(1)}
+.art{border-radius:32px;box-shadow:0 8px 0 rgba(0,0,0,.2),0 28px 50px rgba(0,0,0,.4);animation:rise .9s both}
+@keyframes rise{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+.steps{display:flex;flex-direction:row;gap:40px;margin-bottom:48px}
+.step{width:528px;box-sizing:border-box;background:linear-gradient(180deg,#FFFFFF,#F2E6CC);border-top:12px solid var(--red);border-radius:20px;padding:28px 32px 32px;display:flex;flex-direction:column;gap:8px;box-shadow:0 6px 0 #C9B58C,0 14px 0 -2px rgba(150,120,70,.35),0 22px 36px rgba(31,42,55,.3)}
+.step .date{font-family:'Domine',Georgia,serif;font-size:50px;font-weight:700;line-height:1.1;color:var(--red);text-shadow:0 3px 0 #E8C9B8}
+.step h3{font-size:36px;font-weight:700;line-height:1.2;color:var(--ink)}
+.step .txt{font-size:30px;line-height:1.35;color:var(--soft)}
+.banner{background:linear-gradient(180deg,#C93A40,#8C1C22);border-radius:24px;display:flex;flex-direction:row;gap:40px;align-items:center;padding:32px 48px;box-shadow:0 8px 0 #5E1015,0 22px 36px rgba(94,16,21,.45)}
+.banner .big{font-size:38px;line-height:1.3;font-weight:600;color:var(--paper);text-shadow:0 2px 0 rgba(0,0,0,.35)}
+.map{position:relative;width:700px;height:460px}
+.map .lab{position:absolute;font-size:26px;font-weight:700;color:var(--ink);text-align:center}
+.swap{background:linear-gradient(180deg,#2C3F55,#111922);border-radius:32px;width:640px;padding:56px 48px;display:flex;flex-direction:column;align-items:center;gap:24px}
+.swap .k{font-size:28px;font-weight:700;color:var(--gold);letter-spacing:3px}
+.swap .old{font-family:'Domine',Georgia,serif;font-size:60px;color:var(--mute);text-shadow:0 4px 0 #0B1119}
+.swap .new{font-family:'Domine',Georgia,serif;font-size:80px;font-weight:700;color:var(--gold);text-shadow:0 5px 0 #8A5E0C,0 14px 24px rgba(0,0,0,.5)}
+.tbl{font-size:30px;color:var(--ink);margin-bottom:40px}
+.tbl th{color:var(--paper);font-weight:700;text-align:left;padding:12px 20px}
+.tbl td{text-align:left;padding:12px 20px}
+.tbl .hd{background:var(--ink)}
+.tbl .bd{background:#EFE3CE}
+.rowd{display:flex;flex-direction:row;gap:32px;background:linear-gradient(180deg,#34495F,#1B2735);border-left:12px solid var(--gold);border-radius:18px;padding:20px 32px;align-items:center;box-shadow:0 5px 0 #0B1119,0 14px 26px rgba(0,0,0,.45)}
+.rowd h3{width:360px;font-size:34px;font-weight:700;line-height:1.2;color:var(--gold)}
+.rowd p{flex:1;font-size:30px;line-height:1.35;color:var(--paper)}
+.cal{width:560px;background:linear-gradient(180deg,#FFFFFF,#F2E6CC);border:6px solid var(--ink);border-radius:28px;overflow:hidden}
+.cal .mo{background:linear-gradient(180deg,#C93A40,#8C1C22);color:var(--paper);font-size:38px;font-weight:700;text-align:center;padding:24px;text-shadow:0 2px 0 rgba(0,0,0,.35)}
+.cal .day{font-family:'Domine',Georgia,serif;font-size:240px;font-weight:700;line-height:1.05;text-align:center;color:var(--ink);text-shadow:0 6px 0 #D5C198,0 16px 22px rgba(31,42,55,.3)}
+.cal .ev{font-size:32px;line-height:1.35;text-align:center;padding:0 32px 36px;color:var(--soft)}
+.thanks{font-family:'Domine',Georgia,serif;font-size:72px;font-weight:700;color:var(--gold);margin-top:48px;text-shadow:0 5px 0 #8A5E0C,0 14px 26px rgba(0,0,0,.5)}
+.foot{position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:var(--soft)}
+.pgnum{position:absolute;right:128px;bottom:64px;width:300px;text-align:right;font-size:24px;color:var(--soft)}
+.pgnum::after{content:" " counter(page)}
+section.dark .foot,section.dark .pgnum{color:var(--mute)}
+
+
+html,body{margin:0;height:100%;background:#0d131a;overflow:hidden}
+#stage{position:absolute;width:1920px;height:1080px;transform-origin:top left}
+section{box-sizing:border-box;position:absolute;top:0;left:0;width:1920px;height:1080px;overflow:hidden;visibility:hidden}
+section.active{visibility:visible}
+section aside{display:none}
+section p,section h1,section h2,section h3{margin:0}
+section h2{margin-bottom:48px}
+section .eyebrow{margin-bottom:12px}
+section ul,section ol{margin:0}
+.tbl{border-collapse:collapse}
+x-shape{display:block}
+x-shape[kind=arrow-down]{clip-path:polygon(30% 0,70% 0,70% 60%,100% 60%,50% 100%,0 60%,30% 60%)}
+section hr{margin:0}
+#bar{position:fixed;left:0;right:0;bottom:0;height:70px;display:flex;align-items:center;justify-content:center;gap:24px;background:#17212c;font-family:'Nunito Sans',Arial,sans-serif}
+#bar button{font:700 20px 'Nunito Sans',Arial,sans-serif;color:#17212c;background:linear-gradient(180deg,#F7D36B,#C58A1A);border:0;border-radius:12px;padding:10px 24px;cursor:pointer;box-shadow:0 4px 0 #7a520a}
+#bar button:active{transform:translateY(3px);box-shadow:0 1px 0 #7a520a}
+#bar{transition:opacity .4s}
+body.fs #bar{opacity:0;pointer-events:none}
+body.fs.showbar #bar{opacity:1;pointer-events:auto}
+#bar span{color:#C3CEDA;font-size:20px;min-width:90px;text-align:center}
+
+</style></head><body>
+<div id="stage">
+<section id="cover" class="dark" data-transition="fade">
+<div class="row g64">
+<div class="col w1000 gap28">
+<p class="eyebrow">PELAJARAN SEJARAH</p>
+<h1>Masuknya Jepang ke Indonesia</h1>
+<hr style="border-top:6px solid #E0A526;width:160px">
+<p class="dlead">Dari kedatangan sampai berakhirnya masa pendudukan, tahun 1942 sampai 1945</p>
+<p class="sub">Gunakan panah kiri dan kanan pada papan tombol untuk berpindah halaman.</p>
+</div>
+<div class="art">
+<svg viewBox="0 0 600 640" width="600" height="640" aria-label="Matahari terbit di atas laut dengan kapal dan sebuah pulau" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="sg" cx="0.38" cy="0.32" r="0.85"><stop offset="0" stop-color="#F0646A"/><stop offset="1" stop-color="#7E161C"/></radialGradient><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3F8088"/><stop offset="1" stop-color="#1B3F44"/></linearGradient><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2D4258"/><stop offset="1" stop-color="#17212C"/></linearGradient></defs>
+<rect width="600" height="640" rx="32" fill="url(#sky)"/>
+<circle cx="300" cy="300" r="205" fill="#B02A30" opacity=".18"/>
+<circle cx="300" cy="300" r="170" fill="url(#sg)"/>
+<path d="M0 380 H600 V608 Q600 640 568 640 H32 Q0 640 0 608Z" fill="url(#sea)"/>
+<path d="M0 380 Q75 360 150 380 T300 380 T450 380 T600 380 V400 H0Z" fill="#3B7178"/>
+<path d="M30 500 Q105 480 180 500 T330 500 T480 500 T630 500" stroke="#F6EFE2" stroke-width="4" fill="none" opacity=".45"/>
+<path d="M0 570 Q75 550 150 570 T300 570 T450 570 T600 570" stroke="#F6EFE2" stroke-width="4" fill="none" opacity=".35"/>
+<path d="M400 380 Q440 320 490 340 Q530 310 580 380Z" fill="#17212C"/>
+<ellipse cx="160" cy="466" rx="80" ry="8" fill="#0B1119" opacity=".4"/>
+<ellipse cx="342" cy="488" rx="60" ry="7" fill="#0B1119" opacity=".4"/>
+<polygon points="90,420 230,420 205,456 115,456" fill="#17212C"/>
+<rect x="156" y="372" width="8" height="48" fill="#17212C"/>
+<polygon points="164,376 164,412 200,412" fill="#F6EFE2"/>
+<polygon points="300,452 400,452 385,478 315,478" fill="#17212C"/>
+<rect x="346" y="418" width="6" height="34" fill="#17212C"/>
+<polygon points="352,422 352,448 378,448" fill="#F6EFE2"/>
+</svg>
+</div>
+</div>
+<aside>Pembukaan. Presentasi ini menceritakan bagaimana Jepang datang ke Indonesia pada 1942 dan apa yang terjadi sampai 1945.</aside>
+</section>
+<section id="latar" data-transition="fade">
+<p class="eyebrow">1 · LATAR BELAKANG</p>
+<h2>Mengapa Jepang datang?</h2>
+<div class="row g64">
+<div class="col w960">
+<div class="card fragment"><h3>Perang yang meluas</h3><p>Jepang berperang di Asia, lalu menyerang pangkalan laut Amerika di Pearl Harbor pada Desember 1941.</p></div>
+<div class="card fragment"><h3>Butuh bahan</h3><p>Pabrik dan pasukan Jepang memerlukan minyak bumi, karet, timah, dan beras. Semuanya ada di Indonesia.</p></div>
+<div class="card fragment"><h3>Belanda sedang lemah</h3><p>Negeri Belanda dikuasai Jerman sejak 1940, sehingga penjagaan di Hindia Belanda kurang kuat.</p></div>
+</div>
+<div class="art">
+<svg viewBox="0 0 640 560" width="640" height="560" aria-label="Panah dari kepulauan Indonesia menuju Jepang, membawa minyak, karet, dan timah" xmlns="http://www.w3.org/2000/svg">
+<rect width="640" height="560" rx="32" fill="#2F5D62"/>
+<path d="M470 70 Q520 50 560 90 Q580 130 540 160 Q500 150 480 120Z" fill="#F6EFE2"/>
+<circle cx="535" cy="98" r="20" fill="#B02A30"/>
+<path d="M70 410 Q110 380 170 400 Q200 440 150 460 Q90 460 70 410Z" fill="#C8A96A"/>
+<path d="M210 450 Q260 430 310 450 Q320 480 270 490 Q220 490 210 450Z" fill="#C8A96A"/>
+<path d="M340 420 Q400 400 450 430 Q440 470 380 470 Q340 460 340 420Z" fill="#C8A96A"/>
+<path d="M190 385 C 250 260 390 215 470 160" stroke="#E0A526" stroke-width="10" fill="none" stroke-dasharray="4 18" stroke-linecap="round"/>
+<path d="M452 136 L496 160 L456 184Z" fill="#E0A526"/>
+<circle cx="250" cy="330" r="44" fill="#F6EFE2"/>
+<path d="M250 300 Q270 326 270 342 A20 20 0 0 1 230 342 Q230 326 250 300Z" fill="#17212C"/>
+<circle cx="330" cy="262" r="44" fill="#F6EFE2"/>
+<path d="M308 284 Q308 240 352 240 Q352 284 308 284Z" fill="#2F5D62"/>
+<path d="M312 280 L346 246" stroke="#F6EFE2" stroke-width="4"/>
+<circle cx="410" cy="200" r="44" fill="#F6EFE2"/>
+<path d="M390 216 L398 190 H424 L432 216Z" fill="#46515F"/>
+</svg>
+</div>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Jepang membutuhkan minyak, karet, timah, dan beras untuk perangnya. Indonesia, yang saat itu disebut Hindia Belanda, kaya akan semuanya. Belanda sendiri sedang lemah karena negerinya dikuasai Jerman.</aside>
+</section>
+<section id="semboyan" class="dark" data-transition="fade">
+<p class="eyebrow">1 · LATAR BELAKANG</p>
+<h2>Semboyan “Tiga A”</h2>
+<div class="three">
+<div class="dcard fragment">
+<svg viewBox="0 0 140 140" width="140" height="140" aria-label="Matahari bersinar" xmlns="http://www.w3.org/2000/svg"><circle cx="70" cy="70" r="30" fill="#E0A526"/><path d="M70 12V28M70 112V128M12 70H28M112 70H128M29 29L40 40M100 100L111 111M111 29L100 40M40 100L29 111" stroke="#E0A526" stroke-width="8" stroke-linecap="round" fill="none"/></svg>
+<h3>Nippon Cahaya Asia</h3>
+<p>Jepang mengaku membawa terang bagi bangsa-bangsa Asia.</p>
+</div>
+<div class="dcard fragment">
+<svg viewBox="0 0 140 140" width="140" height="140" aria-label="Perisai" xmlns="http://www.w3.org/2000/svg"><path d="M70 14 L120 32 V70 Q120 110 70 128 Q20 110 20 70 V32Z" fill="#E0A526"/><path d="M70 36 L98 46 V70 Q98 94 70 106 Q42 94 42 70 V46Z" fill="#223041"/></svg>
+<h3>Nippon Pelindung Asia</h3>
+<p>Jepang mengaku melindungi Asia dari penjajah bangsa Barat.</p>
+</div>
+<div class="dcard fragment">
+<svg viewBox="0 0 140 140" width="140" height="140" aria-label="Bendera di tiang" xmlns="http://www.w3.org/2000/svg"><rect x="34" y="14" width="10" height="112" rx="5" fill="#E0A526"/><path d="M44 20 L116 40 L44 74Z" fill="#F6EFE2"/></svg>
+<h3>Nippon Pemimpin Asia</h3>
+<p>Jepang mengaku memimpin Asia menuju kemajuan bersama.</p>
+</div>
+</div>
+<p class="dlead fragment" style="margin-top:40px">Banyak orang mula-mula menyambut Jepang karena berharap lepas dari penjajahan Belanda. Namun kenyataannya jauh berbeda.</p>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Jepang menyebarkan semboyan Tiga A untuk menarik hati rakyat. Pada awalnya banyak yang percaya, tetapi harapan itu segera berubah menjadi kekecewaan.</aside>
+</section>
+<section id="masuk" class="alt" data-transition="fade">
+<p class="eyebrow">2 · CARA JEPANG MASUK</p>
+<h2>Mendarat di tiga tempat sekaligus</h2>
+<div class="row">
+<div class="col w880">
+<div class="card fragment"><h3>1 Maret 1942</h3><p>Pasukan Jepang mendarat serentak di Banten, Indramayu, dan Rembang.</p></div>
+<div class="card fragment"><h3>Bergerak cepat</h3><p>Mereka maju ke Batavia dan Bandung, dan Belanda tidak mampu menahannya.</p></div>
+<div class="card fragment"><h3>Sebelumnya</h3><p>Jepang sudah merebut Tarakan, Balikpapan, dan Palembang, tempat minyak bumi.</p></div>
+</div>
+<div class="art map">
+<svg viewBox="0 0 700 460" width="700" height="460" aria-label="Peta Pulau Jawa dengan tiga panah pendaratan dari utara di Banten, Indramayu, dan Rembang" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="land" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3C98A"/><stop offset="1" stop-color="#9C7A42"/></linearGradient><linearGradient id="sea2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCEBEA"/><stop offset="1" stop-color="#A9C7C6"/></linearGradient></defs>
+<rect width="700" height="460" rx="32" fill="url(#sea2)"/>
+<ellipse cx="350" cy="290" rx="300" ry="22" fill="#2F5D62" opacity=".25"/>
+<path d="M50 255 L90 215 Q160 205 230 215 Q300 190 370 210 Q450 195 520 205 Q590 200 640 225 L655 250 Q600 262 540 258 Q470 275 400 268 Q320 285 240 275 Q160 285 90 275Z" fill="url(#land)"/>
+<g stroke="#B02A30" stroke-width="10" stroke-linecap="round"><path d="M75 125 V190"/><path d="M230 125 V188"/><path d="M445 125 V178"/></g>
+<g fill="#B02A30"><path d="M60 188 L75 214 L90 188Z"/><path d="M215 186 L230 212 L245 186Z"/><path d="M430 176 L445 202 L460 176Z"/></g>
+</svg>
+<p class="lab" style="left:20px;top:70px;width:110px">Banten</p>
+<p class="lab" style="left:155px;top:70px;width:150px">Indramayu</p>
+<p class="lab" style="left:380px;top:70px;width:130px">Rembang</p>
+<p class="lab" style="left:250px;top:360px;width:200px">Pulau Jawa</p>
+</div>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Pada 1 Maret 1942 pasukan Jepang mendarat di tiga tempat di Pulau Jawa. Sebelum itu mereka sudah merebut daerah penghasil minyak bumi di Tarakan, Balikpapan, dan Palembang.</aside>
+</section>
+<section id="menyerah" data-transition="fade">
+<p class="eyebrow">2 · CARA JEPANG MASUK</p>
+<h2>Belanda menyerah dalam seminggu</h2>
+<div class="steps">
+<div class="step fragment"><p class="date">1 Maret 1942</p><h3>Mendarat</h3><p class="txt">Pasukan Jepang turun ke darat di tiga tempat di Pulau Jawa.</p></div>
+<div class="step fragment"><p class="date">5 Maret 1942</p><h3>Batavia dikuasai</h3><p class="txt">Jepang memasuki Batavia, ibu kota Hindia Belanda.</p></div>
+<div class="step fragment"><p class="date">8 Maret 1942</p><h3>Belanda menyerah</h3><p class="txt">Di Kalijati, Subang, Belanda menyerah kepada Jepang.</p></div>
+</div>
+<div class="banner fragment">
+<svg viewBox="0 0 110 110" width="110" height="110" aria-label="Bendera putih tanda menyerah" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="8" width="8" height="94" rx="4" fill="#F6EFE2"/><path d="M28 14 Q55 4 80 18 T100 20 V60 Q80 66 60 58 T28 62Z" fill="#F6EFE2"/></svg>
+<p class="big">Sejak saat itu Indonesia dijajah Jepang selama sekitar tiga setengah tahun, dari 1942 sampai 1945.</p>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Pasukan Belanda tidak mampu bertahan. Hanya dalam delapan hari sejak pendaratan, Belanda menyerah di Kalijati. Setelah itu seluruh wilayah Hindia Belanda jatuh ke tangan Jepang.</aside>
+</section>
+<section id="kerja" class="alt" data-transition="fade">
+<p class="eyebrow">3 · DAMPAK BAGI RAKYAT</p>
+<h2>Hidup menjadi sangat sulit</h2>
+<div class="row g64">
+<div class="col w960">
+<div class="card fragment"><h3>Kerja paksa (romusha)</h3><p>Banyak orang dipaksa membangun jalan dan lapangan terbang. Banyak yang tidak pulang.</p></div>
+<div class="card fragment"><h3>Padi diambil paksa</h3><p>Hasil panen harus diserahkan untuk pasukan Jepang. Rakyat pun kelaparan.</p></div>
+<div class="card fragment"><h3>Barang serba sulit</h3><p>Pakaian langka, sampai ada yang memakai karung. Harga barang naik tinggi.</p></div>
+</div>
+<div class="art">
+<svg viewBox="0 0 640 560" width="640" height="560" aria-label="Tiga orang memikul beban berat di jalan saat matahari terbenam" xmlns="http://www.w3.org/2000/svg">
+<defs><g id="f"><circle cx="0" cy="-92" r="16" fill="#17212C"/><path d="M0 -72 L10 -30 M0 -62 L24 -38 M10 -30 L-8 0 M10 -30 L26 0" stroke="#17212C" stroke-width="10" stroke-linecap="round" fill="none"/><rect x="-44" y="-86" width="34" height="44" rx="6" fill="#17212C" transform="rotate(-10 -27 -64)"/></g></defs>
+<rect width="640" height="560" rx="32" fill="#E8D3A8"/>
+<circle cx="470" cy="190" r="90" fill="#B02A30"/>
+<path d="M0 400 H640 V528 Q640 560 608 560 H32 Q0 560 0 528Z" fill="#8C6B3F"/>
+<use href="#f" x="150" y="450"/><use href="#f" x="300" y="480"/><use href="#f" x="450" y="450"/>
+</svg>
+</div>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Romusha adalah kerja paksa. Perkiraan jumlah korbannya berbeda-beda, dari ratusan ribu sampai jutaan orang. Selain itu hasil padi diambil dan barang kebutuhan sulit didapat.</aside>
+</section>
+<section id="awas" class="dark" data-transition="fade">
+<p class="eyebrow">3 · DAMPAK BAGI RAKYAT</p>
+<h2>Dijaga dengan keras</h2>
+<div class="row g64">
+<div class="col w960">
+<div class="dcard fragment"><h3>Polisi yang ditakuti</h3><p>Kenpeitai, pasukan polisi Jepang, menangkap dan menyiksa orang yang dicurigai.</p></div>
+<div class="dcard fragment"><h3>Dilarang berkumpul</h3><p>Rapat dan perkumpulan bangsa Indonesia dibubarkan, kecuali yang dibentuk Jepang.</p></div>
+<div class="dcard fragment"><h3>Merah putih dilarang</h3><p>Bendera merah putih dan lagu Indonesia Raya pada mulanya tidak boleh dipakai.</p></div>
+</div>
+<div class="art">
+<svg viewBox="0 0 640 560" width="640" height="560" aria-label="Gembok besar berwarna emas" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7D36B"/><stop offset="1" stop-color="#B27A12"/></linearGradient><linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34495F"/><stop offset="1" stop-color="#16202B"/></linearGradient></defs>
+<rect width="640" height="560" rx="32" fill="url(#bg2)"/>
+<ellipse cx="320" cy="478" rx="170" ry="22" fill="#0B1119" opacity=".5"/>
+<path d="M240 250 V190 A80 80 0 0 1 400 190 V250" stroke="url(#gd)" stroke-width="28" fill="none" stroke-linecap="round"/>
+<rect x="200" y="262" width="240" height="200" rx="28" fill="#8A5E0C"/>
+<rect x="200" y="250" width="240" height="200" rx="28" fill="url(#gd)"/>
+<rect x="218" y="262" width="26" height="170" rx="13" fill="#FFFFFF" opacity=".22"/>
+<circle cx="320" cy="334" r="26" fill="#17212C"/>
+<path d="M308 344 H332 L338 404 H302Z" fill="#17212C"/>
+</svg>
+</div>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Jepang mengawasi rakyat dengan ketat. Kegiatan bangsa Indonesia dibatasi, dan lambang bangsa seperti bendera serta lagu kebangsaan pada awalnya dilarang.</aside>
+</section>
+<section id="bahasa" data-transition="fade">
+<p class="eyebrow">4 · PERUBAHAN DI INDONESIA</p>
+<h2>Perubahan dalam kehidupan sehari-hari</h2>
+<div class="row g64">
+<div class="col w960">
+<div class="card fragment"><h3>Bahasa Indonesia dipakai</h3><p>Bahasa Belanda dilarang. Bahasa Indonesia dipakai di sekolah dan kantor.</p></div>
+<div class="card fragment"><h3>Sekolah disatukan</h3><p>Sekolah rakyat enam tahun dibuka untuk anak dari segala golongan.</p></div>
+<div class="card fragment"><h3>Rukun tetangga</h3><p>Setiap sepuluh sampai dua puluh rumah dihimpun dalam satu kelompok (tonarigumi).</p></div>
+</div>
+<div class="swap art fragment">
+<p class="k">NAMA KOTA DIGANTI</p>
+<p class="old">Batavia</p>
+<x-shape kind="arrow-down" style="width:60px;height:120px;background:#E0A526"></x-shape>
+<p class="new">Jakarta</p>
+</div>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Jepang melarang bahasa Belanda sehingga bahasa Indonesia makin sering dipakai. Nama Batavia diganti menjadi Jakarta, dan sekolah dibuat sama untuk semua anak.</aside>
+</section>
+<section id="pasukan" class="alt" data-transition="fade">
+<p class="eyebrow">4 · PERUBAHAN DI INDONESIA</p>
+<h2>Perkumpulan dan pasukan bentukan Jepang</h2>
+<table class="tbl">
+<tr class="hd"><th style="width:22%">Nama</th><th style="width:14%">Tahun</th><th style="width:64%">Isi</th></tr>
+<tr><td>Putera</td><td>1943</td><td>Gerakan rakyat yang dipimpin tokoh bangsa Indonesia</td></tr>
+<tr class="bd"><td>Seinendan</td><td>1943</td><td>Barisan pemuda yang dilatih menjaga kampung</td></tr>
+<tr><td>Heiho</td><td>1943</td><td>Prajurit pembantu yang bekerja bersama pasukan Jepang</td></tr>
+<tr class="bd"><td>PETA</td><td>1943</td><td>Pasukan Pembela Tanah Air, dilatih menjadi prajurit</td></tr>
+<tr><td>Jawa Hokokai</td><td>1944</td><td>Pengganti Putera, artinya Kebaktian Rakyat Jawa</td></tr>
+</table>
+<div class="art">
+<svg viewBox="0 0 1664 150" width="1664" height="150" aria-label="Barisan pemuda berdiri rapi" xmlns="http://www.w3.org/2000/svg">
+<defs><g id="p"><circle cx="0" cy="-78" r="13"/><path d="M-16 -60 H16 L12 -20 H-12Z"/><rect x="-11" y="-20" width="9" height="30"/><rect x="2" y="-20" width="9" height="30"/></g></defs>
+<rect x="0" y="138" width="1664" height="6" rx="3" fill="#46515F"/>
+<use href="#p" x="60" y="128" fill="#B02A30"/><use href="#p" x="170" y="128" fill="#17212C"/><use href="#p" x="280" y="128" fill="#B02A30"/><use href="#p" x="390" y="128" fill="#17212C"/><use href="#p" x="500" y="128" fill="#B02A30"/><use href="#p" x="610" y="128" fill="#17212C"/><use href="#p" x="720" y="128" fill="#B02A30"/><use href="#p" x="830" y="128" fill="#17212C"/><use href="#p" x="940" y="128" fill="#B02A30"/><use href="#p" x="1050" y="128" fill="#17212C"/><use href="#p" x="1160" y="128" fill="#B02A30"/><use href="#p" x="1270" y="128" fill="#17212C"/><use href="#p" x="1380" y="128" fill="#B02A30"/><use href="#p" x="1490" y="128" fill="#17212C"/><use href="#p" x="1600" y="128" fill="#B02A30"/>
+</svg>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Jepang membentuk banyak perkumpulan dan pasukan untuk membantu perangnya. Namun latihan yang diterima pemuda Indonesia kelak berguna bagi perjuangan kemerdekaan.</aside>
+</section>
+<section id="akhir" class="dark" data-transition="fade">
+<p class="eyebrow">5 · AKHIR MASA PENDUDUKAN</p>
+<h2>Jepang kalah dan menyerah</h2>
+<div class="row g104">
+<div class="col w1100" style="gap:16px">
+<div class="rowd fragment"><h3>7 September 1944</h3><p>Jepang berjanji memberi kemerdekaan kepada Indonesia di kemudian hari.</p></div>
+<div class="rowd fragment"><h3>Tahun 1945</h3><p>Dibentuk badan penyelidik usaha persiapan kemerdekaan (BPUPKI).</p></div>
+<div class="rowd fragment"><h3>6 dan 9 Agustus 1945</h3><p>Bom atom dijatuhkan di Hiroshima dan Nagasaki.</p></div>
+<div class="rowd fragment"><h3>15 Agustus 1945</h3><p>Jepang menyerah kepada Sekutu.</p></div>
+</div>
+<div class="art">
+<svg viewBox="0 0 460 540" width="460" height="540" aria-label="Bendera putih berkibar di tiang tinggi" xmlns="http://www.w3.org/2000/svg">
+<rect width="460" height="540" rx="32" fill="#223041"/>
+<circle cx="330" cy="400" r="70" fill="#B02A30" opacity=".85"/>
+<rect x="110" y="70" width="14" height="400" rx="7" fill="#E0A526"/>
+<path d="M124 82 Q200 62 270 92 T400 92 V250 Q330 280 270 250 T124 262Z" fill="#F6EFE2"/>
+<rect x="60" y="466" width="340" height="10" rx="5" fill="#46515F"/>
+</svg>
+</div>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Jepang makin terdesak dalam perang. Setelah bom atom jatuh di dua kota, Jepang menyerah pada 15 Agustus 1945 dan terjadi kekosongan kekuasaan di Indonesia.</aside>
+</section>
+<section id="jalan" class="alt" data-transition="fade">
+<p class="eyebrow">5 · AKHIR MASA PENDUDUKAN</p>
+<h2>Jalan menuju kemerdekaan</h2>
+<div class="row g104">
+<div class="col w1000">
+<div class="card fragment"><h3>Pemuda yang terlatih</h3><p>Anggota PETA dan Heiho kelak menjadi inti pasukan Indonesia.</p></div>
+<div class="card fragment"><h3>Rasa bersatu</h3><p>Bahasa Indonesia dipakai di mana-mana dan para tokoh bangsa dekat dengan rakyat.</p></div>
+<div class="card fragment"><h3>Kesempatan terbuka</h3><p>Setelah Jepang menyerah, tidak ada penguasa yang kuat di Indonesia.</p></div>
+</div>
+<div class="cal art fragment">
+<p class="mo">Agustus 1945</p>
+<p class="day">17</p>
+<p class="ev">Soekarno dan Hatta membacakan pernyataan kemerdekaan di Jakarta.</p>
+</div>
+</div>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Masa pendudukan membuat rakyat menderita, tetapi juga melatih pemuda dan menyatukan bangsa. Dua hari setelah Jepang menyerah, kemerdekaan dinyatakan pada 17 Agustus 1945.</aside>
+</section>
+<section id="penutup" class="dark" data-transition="fade">
+<p class="eyebrow">PENUTUP</p>
+<h2>Pelajaran dari masa lalu</h2>
+<div class="three">
+<div class="dcard fragment"><h3>Penjajahan membawa derita</h3><p>Selama tiga setengah tahun, rakyat menanggung kerja paksa dan kelaparan.</p></div>
+<div class="dcard fragment"><h3>Persatuan memberi kekuatan</h3><p>Bahasa dan tekad bersama menyatukan bangsa dari ujung ke ujung.</p></div>
+<div class="dcard fragment"><h3>Kemerdekaan harus dijaga</h3><p>Kemerdekaan diraih dengan pengorbanan, dan tugas kita adalah merawatnya.</p></div>
+</div>
+<p class="thanks fragment">Terima kasih</p>
+<p class="foot">Masuknya Jepang ke Indonesia</p>
+<p class="pgnum">Halaman</p>
+<aside>Penutup: tiga pelajaran dari masa pendudukan Jepang. Ajak peserta bertanya atau berbincang.</aside>
+</section>
+</div>
+<div id="bar"><button id="pv">‹ Sebelumnya</button><span id="lbl"></span><button id="nx">Berikutnya ›</button><button id="fs">⛶ Layar penuh</button></div>
+<script>
+
+const slides=[...document.querySelectorAll('#stage section')];
+const stage=document.getElementById('stage'),lbl=document.getElementById('lbl');
+let i=0;
+function fit(){const H=isFs()?innerHeight:innerHeight-70;const s=Math.min(innerWidth/1920,H/1080);
+ stage.style.transform='scale('+s+')';
+ stage.style.left=((innerWidth-1920*s)/2)+'px';
+ stage.style.top=((H-1080*s)/2)+'px';}
+function show(n,all){i=n;slides.forEach((s,k)=>s.classList.toggle('active',k===n));
+ slides[n].querySelectorAll('.fragment').forEach(f=>f.classList.toggle('visible',!!all));
+ lbl.textContent=(n+1)+' / '+slides.length;}
+function next(){const f=slides[i].querySelector('.fragment:not(.visible)');
+ if(f){f.classList.add('visible');return}
+ if(i<slides.length-1)show(i+1,false);}
+function prev(){if(i>0)show(i-1,true);}
+document.getElementById('nx').onclick=next;
+document.getElementById('pv').onclick=prev;
+addEventListener('keydown',e=>{
+ if(['ArrowRight','ArrowDown','PageDown',' ','Enter'].includes(e.key)){e.preventDefault();next()}
+ if(['ArrowLeft','ArrowUp','PageUp','Backspace'].includes(e.key)){e.preventDefault();prev()}
+ if(e.key==='Home')show(0,false);
+ if(e.key==='End')show(slides.length-1,true);});
+const fsb=document.getElementById('fs');let hideT;
+function isFs(){return !!(document.fullscreenElement||document.webkitFullscreenElement)}
+function toggleFs(){const e=document.documentElement;
+ if(isFs()){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}
+ else{(e.requestFullscreen||e.webkitRequestFullscreen).call(e)}}
+function onFs(){document.body.classList.toggle('fs',isFs());
+ fsb.textContent=isFs()?'✕ Keluar layar penuh':'⛶ Layar penuh';fit();}
+if(!(document.documentElement.requestFullscreen||document.documentElement.webkitRequestFullscreen))fsb.style.display='none';
+fsb.onclick=toggleFs;
+document.addEventListener('fullscreenchange',onFs);
+document.addEventListener('webkitfullscreenchange',onFs);
+addEventListener('mousemove',()=>{if(!isFs())return;
+ document.body.classList.add('showbar');clearTimeout(hideT);
+ hideT=setTimeout(()=>document.body.classList.remove('showbar'),2500);});
+addEventListener('keydown',e=>{if(e.key==='f'||e.key==='F')toggleFs();});
+addEventListener('resize',fit);fit();show(0,false);
+
+</script></body></html>
